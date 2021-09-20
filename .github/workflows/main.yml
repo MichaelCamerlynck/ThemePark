@@ -1,7 +1,5 @@
-name: Test, Upload artifact and Deploy to Heroku
-
+name: Upload to Heroku
 on: push
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
