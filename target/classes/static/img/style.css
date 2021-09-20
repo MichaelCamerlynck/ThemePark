@@ -1,0 +1,75 @@
+/*add a self-selected stylesheet here*/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+html {
+    margin-left: calc(100vw - 100%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ed4a44;
+    font-family: 'Space Mono', monospace;
+}
+
+.main-body{
+    background-color: #eeeeee;
+    min-height: 95.9vh;
+}
+
+.new-anything{
+    font-size: 3rem;
+}
+
+nav{
+    background-color: #7d7d82;
+}
+
+h1{
+    font-family: 'BioRhyme', serif;
+    color: #ed4a44;
+    font-weight: bold;
+}
+
+.card-title{
+    font-weight: 700;
+}
+
+footer{
+    background-color: #d3d3d3;
+}
+
+@media screen and (max-width: 992px){
+    .new-anything{
+        font-size: 2rem;
+    }
+}
+
+.jumbotron{
+    background-color: #779ecc;
+}
+
+.jumbotron:nth-child(odd){
+    background-color: #ff985a;
+}
+
+.error-message{
+    font-size: 3rem;
+}
+
+.btn-lg{
+    font-size: 2rem;
+}
+
+.error{
+    font-size: 4rem;
+}
+
+
+
