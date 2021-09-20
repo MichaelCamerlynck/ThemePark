@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Deploy to Heroku
-        uses: behe/heroku-build@v1
+      - uses: CDNievas/heroku-action@v1.0 # This is the action
         with:
-          app-name: "themepark-r0831153"
-          api-key: "${{secrets.HEROKU_API_KEY}}"
+          heroku_email: "camerlynck.michael@outlook.com"
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "themepark-r0831153"
