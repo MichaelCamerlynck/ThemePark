@@ -1,17 +1,15 @@
-name: Deploy
+name: Test, Upload artifact and Deploy to Heroku
 
-on:
-  push:
-    branches:
-      - main
+on: push
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
+    name: Deploy to Heroku
     steps:
       - uses: actions/checkout@v2
-      - uses: CDNievas/heroku-action@v1.0 # This is the action
+      - uses: akhileshns/heroku-deploy@v3.12.12
         with:
-          heroku_email: "camerlynck.michael@outlook.com"
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_email: "camerlynck.michael@outlook.com"
           heroku_app_name: "themepark-r0831153"
